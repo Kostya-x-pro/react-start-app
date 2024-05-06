@@ -19,7 +19,7 @@ root.render(
     {/* <MyComponent/> */}
     {/* <WhoAmI name='Kostya' surename={{secondName: "Smith"}} link={() => {return "telegramm.com"}}/> */}
     {/* <WhoAmI name='Alex' surename={{secondName: "Shepard"}} link={() => {return "youtube.com"}}/> */}
-    {/* <AboutMe name="Kostya" surename="Voronkov" link="youtube.com" /> */}
+    <AboutMe name="Kostya" surename="Voronkov" link="youtube.com" />
     {/* <AboutMe name="Alex" surename="Doxer" link="vk.com" /> */}
     {/* <Counter counter={0}/> */}
   </StrictMode>
