@@ -9,6 +9,7 @@ class AboutMe extends Component {
       }
     }
 
+  // способ изменения состояния (state)
   nextYear = () => {
     this.setState(state => ({
       years: state.years + 1
