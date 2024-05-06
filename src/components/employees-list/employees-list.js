@@ -5,12 +5,15 @@ import './employees-list.css';
 const EmployessList = ({data}) => {
 
   const elements = data.map(item => {
+    // Деструкторизация по остаточному принципу
+    const {id, ...itemProps} = item; 
+
     return (
       // обычный перебор
       // <EmployeesListItem name={item.name} salary={item.salary}/>
       
       //c помощью спрет оператора
-      <EmployeesListItem {...item}/>
+      <EmployeesListItem key={id} {...itemProps}/>
     )
   })
 
