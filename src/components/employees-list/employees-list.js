@@ -2,7 +2,7 @@ import EmployeesListItem from '../employees-list-item/employees-list-item';
 
 import './employees-list.css';
 
-const EmployessList = ({data}) => {
+const EmployessList = ({data, onDelete}) => {
 
   const elements = data.map(item => {
     // Деструкторизация по остаточному принципу
@@ -13,7 +13,11 @@ const EmployessList = ({data}) => {
       // <EmployeesListItem name={item.name} salary={item.salary}/>
       
       //c помощью спрет оператора
-      <EmployeesListItem key={id} {...itemProps}/>
+      <EmployeesListItem 
+        key={id} 
+        {...itemProps}
+         onDelete={() => onDelete(id)} 
+        />
     )
   })
 
